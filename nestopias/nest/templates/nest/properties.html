@@ -1,0 +1,355 @@
+{% extends 'nest/navbar.html' %}
+{% load static %}
+{% block title %} Properties {% endblock title %}
+	<body>
+		{% block main-content %}
+		<!-- end:header-top -->
+
+		<aside id="fh5co-hero" class="js-fullheight">
+			<div class="flexslider js-fullheight">
+				<ul class="slides">
+			   	<li style="background-image: url(static/images/img9.png);">
+			   		<div class="overlay"></div>
+			   		<div class="container-fluid">
+			   			<div class="row">
+				   			<div class="col-md-8 col-md-offset-2 text-center js-fullheight slider-text">
+			   				<div class="slider-text-inner">
+			   						<h2 class="heading-title">Our Properties</h2>
+			   				</div>
+			   			</div>
+				   		</div>
+			   		</div>
+			   	</li>
+			  	</ul>
+		  	</div>
+		</aside>
+
+		<div id="fh5co-search-map">
+			<div class="search-property">
+				<div class="s-holder">
+					<h2>Search Properties</h2>
+					<div class="row">
+						<div class="col-xxs-12 col-xs-12">
+							<div class="input-field">
+								<label for="from">Keyword:</label>
+								<input type="text" class="form-control" id="from-place" placeholder="Any"/>
+							</div>
+						</div>
+						<div class="col-xxs-12 col-xs-12">
+							<section>
+								<label for="class">Property Status:</label>
+								<select class="cs-select cs-skin-border">
+									<option value="" disabled selected>Any</option>
+									<option value="1">Rent</option>
+									<option value="2">Sale</option>
+								</select>
+							</section>
+						</div>
+						<div class="col-xxs-12 col-xs-12">
+							<section>
+								<label for="class">Property Type:</label>
+								<select class="cs-select cs-skin-border input-half">
+									<option value="" disabled selected>Any</option>
+									<option value="1">Building</option>
+									<option value="2">Office</option>
+								</select>
+							</section>
+						</div>
+						<div class="col-xxs-12 col-xs-12">
+							<div class="input-field">
+								<label for="from">Location:</label>
+								<input type="text" class="form-control" id="from-place" placeholder="Any"/>
+							</div>
+						</div>
+						<div class="col-xxs-12 col-xs-12">
+							<section>
+								<label for="class">Price:</label>
+								<div class="wide">
+									<select class="cs-select cs-select-half cs-skin-border input-half">
+										<option value="" disabled selected>Any</option>
+										<option value="1">Building</option>
+										<option value="2">Office</option>
+									</select>
+									<select class="cs-select cs-select-half cs-skin-border input-half">
+										<option value="" disabled selected>Any</option>
+										<option value="1">Building</option>
+										<option value="2">Office</option>
+									</select>
+								</div>
+							</section>
+						</div>
+						<div class="col-xxs-12 col-xs-12">
+							<section>
+								<label for="class">Bedrooms:</label>
+								<div class="wide">
+									<select class="cs-select cs-select-half cs-skin-border input-half">
+										<option value="" disabled selected>Any</option>
+										<option value="1">Building</option>
+										<option value="2">Office</option>
+									</select>
+									<select class="cs-select cs-select-half cs-skin-border input-half">
+										<option value="" disabled selected>Any</option>
+										<option value="1">Building</option>
+										<option value="2">Office</option>
+									</select>
+								</div>
+							</section>
+						</div>
+						<div class="col-xxs-12 col-xs-12">
+							<section>
+								<label for="class">Bathrooms:</label>
+								<div class="wide">
+									<select class="cs-select cs-select-half cs-skin-border input-half">
+										<option value="" disabled selected>Any</option>
+										<option value="1">Building</option>
+										<option value="2">Office</option>
+									</select>
+									<select class="cs-select cs-select-half cs-skin-border input-half">
+										<option value="" disabled selected>Any</option>
+										<option value="1">Building</option>
+										<option value="2">Office</option>
+									</select>
+								</div>
+							</section>
+						</div>
+						<div class="col-xxs-12 col-xs-12">
+							<section>
+								<label for="class">Area:</label>
+								<div class="wide">
+									<select class="cs-select cs-select-half cs-skin-border input-half">
+										<option value="" disabled selected>Any</option>
+										<option value="1">Building</option>
+										<option value="2">Office</option>
+									</select>
+									<select class="cs-select cs-select-half cs-skin-border input-half">
+										<option value="" disabled selected>Any</option>
+										<option value="1">Building</option>
+										<option value="2">Office</option>
+									</select>
+								</div>
+							</section>
+						</div>
+						<div class="col-xxs-12 col-xs-12">
+							<section>
+								<label for="class">Parking spots:</label>
+								<div class="wide">
+									<select class="cs-select cs-select-half cs-skin-border input-half">
+										<option value="" disabled selected>Any</option>
+										<option value="1">Building</option>
+										<option value="2">Office</option>
+									</select>
+									<select class="cs-select cs-select-half cs-skin-border input-half">
+										<option value="" disabled selected>Any</option>
+										<option value="1">Building</option>
+										<option value="2">Office</option>
+									</select>
+								</div>
+							</section>
+						</div>
+						<div class="col-xxs-12 col-xs-12 text-center">
+							<p><a class="btn btn-primary btn-lg" href="#">Learn More</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="map" style="background-image: url(images/cover_bg_1.jpg);">
+			</div>
+		</div>
+
+		<div id="fh5co-properties" class="fh5co-section-gray">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
+						<h3>Newest Properties</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores, perspiciatis accusamus asperiores sint consequuntur debitis.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 animate-box">
+						<div class="property">
+							<a href="#" class="fh5co-property" style="background-image: url(images/property-1.jpg);">
+								<span class="status">Sale</span>
+								<ul class="list-details">
+									<li>2000 ft sq<li>
+									<li>5 Bedroom:</li>
+									<li>4 Bathroom:</li>
+									<li>3 Garage:</li>
+								</ul>
+							</a>
+							<div class="property-details">
+								<h3>Properties Near in Beach</h3>
+								<span class="price">$3,000</span>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores.</p>
+								<span class="address"><i class="icon-map"></i>Thomas Street, St. Louis, MO 8990, USA</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 animate-box">
+						<div class="property">
+							<a href="#" class="fh5co-property" style="background-image: url(images/property-2.jpg);">
+								<span class="status">Rent</span>
+								<ul class="list-details">
+									<li>2000 ft sq<li>
+									<li>5 Bedroom:</li>
+									<li>4 Bathroom:</li>
+									<li>3 Garage:</li>
+								</ul>
+							</a>
+							<div class="property-details">
+								<h3>Modern House at NZ</h3>
+								<span class="price">$200/mos</span>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores.</p>
+								<span class="address"><i class="icon-map"></i>Thomas Street, St. Louis, MO 8990, USA</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 animate-box">
+						<div class="property">
+							<a href="#" class="fh5co-property" style="background-image: url(images/property-3.jpg);">
+								<span class="status">Sale</span>
+								<ul class="list-details">
+									<li>2000 ft sq<li>
+									<li>5 Bedroom:</li>
+									<li>4 Bathroom:</li>
+									<li>3 Garage:</li>
+								</ul>
+							</a>
+							<div class="property-details">
+								<h3>Bonggalo House</h3>
+								<span class="price">$3,000</span>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores.</p>
+								<span class="address"><i class="icon-map"></i>Thomas Street, St. Louis, MO 8990, USA</span>						
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 animate-box">
+						<div class="property">
+							<a href="#" class="fh5co-property" style="background-image: url(images/property-4.jpg);">
+								<span class="status">Sale</span>
+								<ul class="list-details">
+									<li>2000 ft sq<li>
+									<li>5 Bedroom:</li>
+									<li>4 Bathroom:</li>
+									<li>3 Garage:</li>
+								</ul>
+							</a>
+							<div class="property-details">
+								<h3>Properties at Alaska</h3>
+								<span class="price">$3,000</span>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores.</p>
+								<span class="address"><i class="icon-map"></i>Thomas Street, St. Louis, MO 8990, USA</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 animate-box">
+						<div class="property">
+							<a href="#" class="fh5co-property" style="background-image: url(images/property-5.jpg);">
+								<span class="status">Rent</span>
+								<ul class="list-details">
+									<li>2000 ft sq<li>
+									<li>5 Bedroom:</li>
+									<li>4 Bathroom:</li>
+									<li>3 Garage:</li>
+								</ul>
+							</a>
+							<div class="property-details">
+								<h3>Modern Properties</h3>
+								<span class="price">$200/mos</span>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores.</p>
+								<span class="address"><i class="icon-map"></i>Thomas Street, St. Louis, MO 8990, USA</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 animate-box">
+						<div class="property">
+							<a href="#" class="fh5co-property" style="background-image: url(images/property-6.jpg);">
+								<span class="status">Sale</span>
+								<ul class="list-details">
+									<li>2000 ft sq<li>
+									<li>5 Bedroom:</li>
+									<li>4 Bathroom:</li>
+									<li>3 Garage:</li>
+								</ul>
+							</a>
+							<div class="property-details">
+								<h3>House at the Top of Mountain</h3>
+								<span class="price">$3,000</span>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores.</p>
+								<span class="address"><i class="icon-map"></i>Thomas Street, St. Louis, MO 8990, USA</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		{% endblock main-content %}
+		
+		{% block footer %}
+		<footer>
+			<div id="footer">
+				<div class="container">
+					<div class="row row-bottom-padded-md">
+						<div class="col-md-3">
+							<img src="{% static 'images/Nestopias_Logo1.png' %}" alt="Nestopias Logo" style="height: 100px;">
+							<!-- <h3  class="section-title">Nestopias</h3> -->
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
+						</div>
+						
+						<div class="col-md-3 col-md-push-1">
+							<h3 class="section-title">Links</h3>
+							<ul>
+								<li><a href="{% url 'home'%}">Home</a></li>
+								<li><a href="{% url 'properties' %}">Properties</a></li>
+								<li><a href="{% url 'agent' %}">Agent</a></li>
+								<li><a href="{% url 'blog' %}">Blog</a></li>
+								<li><a href="#">API</a></li>
+							
+							</ul>
+						</div>
+
+						<div class="col-md-3">
+							<h3 class="section-title">Information</h3>
+							<ul>
+								<li><a href="#">Terms &amp; Condition</a></li>
+								<li><a href="#">License</a></li>
+								<li><a href="#">Privacy &amp; Policy</a></li>
+								<li><a href="#">Contact Us</a></li>
+							</ul>
+						</div>
+						<div class="col-md-3">
+							<h3 class="section-title">Newsletter</h3>
+							<p>Subscribe for our newsletter</p>
+							<form class="form-inline" id="fh5co-header-subscribe">
+								<div class="row">
+									<div class="col-md-12 col-md-offset-0">
+										<div class="form-group">
+											<input type="text" class="form-control" id="email" placeholder="Enter your email">
+											<button type="submit" class="btn btn-default"><i class="icon-paper-plane"></i></button>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<p class="fh5co-social-icons">
+								<a href="#"><i class="icon-twitter2"></i></a>
+								<a href="#"><i class="icon-facebook2"></i></a>
+								<a href="#"><i class="icon-instagram"></i></a>
+								<a href="#"><i class="icon-dribbble2"></i></a>
+								<a href="#"><i class="icon-youtube"></i></a>
+							</p>
+							<p>Copyright 2024 <a href="#">Nestopias</a>. All Rights Reserved.
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	{% endblock footer%}
+
+	</body>
+</html>
+
